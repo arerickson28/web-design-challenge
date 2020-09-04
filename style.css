@@ -1,0 +1,14 @@
+body {background-color:rgb(61, 142, 167);}
+h5 {color: rgb(61, 142, 167);}
+p {color: rgb(61, 142, 167)}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+body {
+    margin: 10px;}
+
+
+.card { margin-top: 50px;}

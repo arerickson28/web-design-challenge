@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+
+<!-- HEAD -->
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,13 +9,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>web-design-challenge</title>
   </head>
+<!-- END HEAD -->
+
+<!-- BEGIN BODY -->
   <body>
+
       <!-- Navbar begins here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Latitude</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><b>Latitude</b></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,10 +30,11 @@
                   Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                  <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+                  <!-- <div class="dropdown-divider"></div> -->
                 </div>
               </li>
             <!-- <li class="nav-item active">
@@ -47,21 +54,80 @@
         </div>
       </nav>
       <!-- Navbar ends here -->
+
       <!-- Containers -->
-      <div class="row">
-        <div class="col-md-8">
+
+
+      <div class="container">
+        <!-- Stuff on left -->
+        <div class="row">
+          <div class="col-md-6">
+              <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a> <img class="card-img-top" src="../Instructions/Resources/assets/images/Fig1.png" alt="Card image cap" > </a>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fugit omnis soluta quis, officia doloremque placeat libero! Doloremque inventore nihil, libero rerum temporibus recusandae assumenda maiores pariatur tempore officia nisi.
+                    </p>
+                  </div>
+              </div>
+          </div>
+          <!-- Stuff on right Containers -->
+          <div class="col-md-6">
             <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Visualizations</h5>
+              
+          
+          <!-- Stuff on right carousel -->
+           
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                 <a href=maxtemp.html>  <img src="../Instructions/Resources/assets/images/Fig1.png" class="d-block w-100" alt="..."> </a> 
                 </div>
-        </div>
-        <div class="col-md-4"> 
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ut voluptatum inventore, officiis, magnam porro, mollitia nostrum quos explicabo numquam iusto praesentium optio obcaecati ipsum ipsa aut? Mollitia, unde consectetur.
-        </div>
+                <div class="carousel-item">
+                  <a href=humidity.html> <img src="../Instructions/Resources/assets/images/Fig2.png" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                  <a href=cloudiness.html><img src="../Instructions/Resources/assets/images/Fig3.png" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                  <a href=windspeed.html><img src="../Instructions/Resources/assets/images/Fig4.png" class="d-block w-100" alt="..."></a>
+                </div>
+              </div>
+                
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
+
+       </div>
+      <!-- Close container -->
       </div>
 
+
+
+          <!-- <div class="col-md-4"> 
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ut voluptatum inventore, officiis, magnam porro, mollitia nostrum quos explicabo numquam iusto praesentium optio obcaecati ipsum ipsa aut? Mollitia, unde consectetur.
+          </div> -->
+        <!-- </div>
+      </div> -->
       <!-- containters end -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -69,6 +135,10 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
+<!-- BODY ENDS HERE -->
+
+
+
 </html>
 
 
